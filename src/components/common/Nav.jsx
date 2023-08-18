@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import "./Nav.css";
 
@@ -6,9 +7,11 @@ function Nav() {
     <header>
       <article>
         <h1>
-          <a href="/">
+          {/* <a href="/"> */}
+          <Link to={'/'}>
             Northwest <span>Animal Hospital</span>
-          </a>
+            </Link>
+          {/* </a> */}
         </h1>
       </article>
       <aside>
