@@ -4,9 +4,15 @@ import { useNavigate } from "react-router-dom";
 
 
 export const PetsListNav = ({ cats, dogs }) => {
+
+  const navigate = useNavigate()
   return (
     <nav className="pets-nav">
       <ul>
+      <li>
+          <a href="/pets/all">See All Pets ({cats.length + dogs.length})</a>
+        
+        </li>
         <li>
           <a href="/pets/cats">See All Cats ({cats.length})</a>
           {/* can leave this as a tag and use usenavigate hook  */}

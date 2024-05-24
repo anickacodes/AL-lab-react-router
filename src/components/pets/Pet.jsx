@@ -1,12 +1,13 @@
-import React from "react";
 import "./Pet.css";
 
 const iconMap = {
-  cat: "🐈",
+  cat: "🐈‍⬛",
   dog: "🐕",
 };
 
 export const Pet = ({ kind, pet }) => {
+  console.log(pet)
+  
   const icon = iconMap[kind];
   return (
     <article key={pet.id}>
